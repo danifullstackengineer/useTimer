@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const useTimer = (time?: number): [{
+const useTimer = (time: number | undefined): [{
     toggle: () => void;
     reset: () => void;
     seconds: number;
