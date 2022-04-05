@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const useTimer = (time: number): [{
+const useTimer = (time?: number): [{
     toggle: () => void;
     reset: () => void;
     seconds: number;
@@ -27,7 +27,7 @@ const useTimer = (time: number): [{
     if (isActive && !isPaused) {
       interval = setInterval(() => {
         setSeconds((seconds) => seconds + 1);
-      }, time);
+      }, time ? time : 1000);
       if (seconds !== 0) {
         clearInterval(interval);
       }

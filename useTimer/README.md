@@ -29,17 +29,36 @@ npm install use-simple-timer
 ```sh
 import useTimer from 'use-simple-timer';
 
-const amount = 1000;
+const [{seconds, setSeconds, toggle, reset, isActive, setIsActive, isPaused, setIsPaused}] = useTimer()
 
-const [{seconds}] = useTimer(amount); --- Timer every 1000 ms = 1 second.
+```
+
+## Available variables
+
+```sh
+seconds:number -> The seconds that passed.
+
+setSeconds:React.Dispatch<React.SetStateAction<number>> -> Sets the seconds to a value(use milliseconds, i.e. if you want to set the seconds to 3, then setSeconds(3000)).
+
+toggle:()=>void -> toggles the isActive variable.
+
+reset:()=>void -> resets the timer(i.e. if seconds is 3, then after calling reset, seconds will be 0. Does not stop the timer).
+
+isActive:boolean -> returns true if timer is active, false if it is stopped.
+
+setIsActive:React.Dispatch<React.SetStateAction<boolean>> -> Sets isActive.
+
+isPaused:boolean -> returns true if timer is paused, false if it is not paused.
+
+setIsPaused:React.Dispatch<React.SetStateAction<boolean>> -> Sets isPaused.
 ```
 
 ## Author
 
 👤 **Baba Dan Constantin**
 
-* Website: Baba Dan Constantin
-* Github: [@danifullstackengineer](https://github.com/danifullstackengineer)
+- Website: Baba Dan Constantin
+- Github: [@danifullstackengineer](https://github.com/danifullstackengineer)
 
 ## 🤝 Contributing
 
@@ -54,5 +73,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2022 [Baba Dan Constantin](https://github.com/danifullstackengineer).<br />
 This project is [MIT](https://github.com/danifullstackengineer/useTimer/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
