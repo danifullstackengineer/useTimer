@@ -1,0 +1,32 @@
+{
+  "name": "use-simple-timer",
+  "version": "1.0.0",
+  "description": "Simple useTimer Hook for React",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danifullstackengineer/useTimer.git"
+  },
+  "keywords": [
+    "useTimer",
+    "React",
+    "Hook"
+  ],
+  "author": "Baba Dan Constantin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danifullstackengineer/useTimer/issues"
+  },
+  "homepage": "https://github.com/danifullstackengineer/useTimer#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "react": "^18.0.0",
+    "typescript": "^4.6.3"
+  }
+}
