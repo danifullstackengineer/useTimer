@@ -44,13 +44,19 @@ toggle:()=>void -> toggles the isActive variable.
 
 reset:()=>void -> resets the timer(i.e. if seconds is 3, then after calling reset, seconds will be 0. Does not stop the timer).
 
-isActive:boolean -> returns true if timer is active, false if it is stopped.
+isActive:boolean -> returns true if timer is active, false if it is stopped. Default = true.
 
 setIsActive:React.Dispatch<React.SetStateAction<boolean>> -> Sets isActive.
 
-isPaused:boolean -> returns true if timer is paused, false if it is not paused.
+isPaused:boolean -> returns true if timer is paused, false if it is not paused. Default = false.
 
 setIsPaused:React.Dispatch<React.SetStateAction<boolean>> -> Sets isPaused.
+```
+
+## Modify the time for the timer
+
+```sh
+const [{seconds}] = useTimer(3000) - Now the timer works once every 3 seconds. Default is 1 second if no number is specified.
 ```
 
 ## Author
