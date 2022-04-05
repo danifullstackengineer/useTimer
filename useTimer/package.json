@@ -1,0 +1,15 @@
+{
+  "name": "usetimer",
+  "version": "1.0.0",
+  "description": "Simple useTimer Hook for React",
+  "main": "useTimer.tsx",
+  "keywords": [
+    "useTimer",
+    "React"
+  ],
+  "author": "Baba Dan Constantin",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0"
+  }
+}
