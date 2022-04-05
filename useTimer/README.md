@@ -27,13 +27,7 @@ npm install use-simple-timer
 ## Usage
 
 ```sh
-import useTimer from &#34;use-simple-timer&#34;
-```
-
-## Run tests
-
-```sh
-npm run test
+import useTimer from 'use-simple-timer';
 ```
 
 ## Author
