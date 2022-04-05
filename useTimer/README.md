@@ -28,6 +28,10 @@ npm install use-simple-timer
 
 ```sh
 import useTimer from 'use-simple-timer';
+
+const amount = 1000;
+
+const [{seconds}] = useTimer(amount); --- Timer every 1000 ms = 1 second.
 ```
 
 ## Author
